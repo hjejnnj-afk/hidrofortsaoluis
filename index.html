@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidrofort Piscinas | Investimento a partir de R$ 10.000</title>
+<meta name="description" content="Piscinas de qualidade a partir de R$ 10.000, ou em até 19x sem juros. Frete para todo o Maranhão e instalação inclusa. Solicite seu orçamento.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4633956003550601');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4633956003550601&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  :root{
+    --navy:#0b1f3a;
+    --navy-deep:#061527;
+    --blue:#1458a8;
+    --turquoise:#19b3ad;
+    --orange:#f26a1b;
+    --orange-dark:#d5590f;
+    --whatsapp:#25D366;
+    --ink:#10211f;
+    --muted:#5b6b76;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--navy-deep);
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.font-display{font-family:'Poppins',sans-serif;}
+
+  /* ---------- Background stage ---------- */
+  .bg-stage{ position:fixed; inset:0; z-index:0; overflow:hidden; }
+  .bg-layer{ position:absolute; inset:0; opacity:0; transition:opacity 900ms ease; will-change:opacity; }
+  .bg-layer.active{opacity:1;}
+  .bg-layer img{ width:100%; height:100%; object-fit:cover; object-position:center 30%; animation:kenburns 16s ease-in-out infinite alternate; }
+  .bg-layer[data-stage="0"] img{ object-position:center 38%; }
+  .bg-layer[data-stage="2"] img{ object-position:center 20%; }
+  @keyframes kenburns{ from{ transform:scale(1); } to{ transform:scale(1.09); } }
+  .bg-overlay{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,21,39,.82) 0%, rgba(11,31,58,.55) 38%, rgba(11,31,58,.92) 78%, var(--navy-deep) 100%); }
+  @media (prefers-reduced-motion: reduce){
+    .bg-layer img{ animation:none; }
+    .bg-layer{ transition:opacity 200ms linear; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{ position:relative; z-index:1; padding:32px 20px 170px; display:flex; flex-direction:column; align-items:center; text-align:center; min-height:64vh; justify-content:flex-end; }
+  .hero-logo{ width:104px; height:auto; margin-bottom:14px; filter:drop-shadow(0 6px 18px rgba(0,0,0,.35)); }
+
+  .ticker{
+    display:inline-flex; align-items:center; gap:7px;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.28);
+    backdrop-filter:blur(6px);
+    color:#fff; font-size:12.5px; font-weight:700;
+    padding:7px 14px; border-radius:999px; margin-bottom:16px;
+    height:30px; overflow:hidden; position:relative; min-width:230px; justify-content:center;
+  }
+  .ticker .dot{ width:6px;height:6px;border-radius:50%;background:var(--orange); flex:none; }
+  .ticker-text{ position:absolute; opacity:0; transform:translateY(8px); transition:opacity .45s ease, transform .45s ease; white-space:nowrap; }
+  .ticker-text.show{ opacity:1; transform:translateY(0); position:relative; }
+
+  .hero h1{ color:#fff; font-weight:800; font-size:30px; line-height:1.22; letter-spacing:-.01em; max-width:460px; text-shadow:0 4px 24px rgba(0,0,0,.35); }
+  .hero h1 .accent{ color:var(--orange); }
+  .hero p.sub{ color:#cfe3f0; margin-top:10px; font-size:15px; max-width:380px; }
+  .hero .ig-link{
+    display:inline-flex; align-items:center; gap:6px; margin-top:14px;
+    color:#fff; text-decoration:none; font-size:13px; font-weight:600;
+    background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.3);
+    padding:6px 12px; border-radius:999px;
+  }
+  .hero .ig-link svg{ width:15px; height:15px; }
+
+  .price-pill{
+    margin-top:16px; display:flex; flex-direction:column; align-items:center; gap:2px;
+    background:linear-gradient(135deg, var(--orange), var(--orange-dark));
+    color:#fff; padding:12px 24px; border-radius:16px;
+    box-shadow:0 8px 24px rgba(242,106,27,.35);
+  }
+  .price-pill-label{ font-size:12px; font-weight:600; opacity:.92; text-transform:uppercase; letter-spacing:.03em; }
+  .price-pill-value{ font-family:'Poppins',sans-serif; font-size:26px; font-weight:800; line-height:1.15; }
+  .price-pill-note{ font-size:12.5px; font-weight:600; opacity:.95; }
+
+  /* ---------- Card ---------- */
+  .card-wrap{ position:relative; z-index:2; margin-top:-150px; padding:0 16px 10px; display:flex; justify-content:center; }
+  .card{
+    width:100%; max-width:460px; background:#fff; border-radius:26px;
+    box-shadow:0 30px 60px -20px rgba(6,21,39,.55), 0 2px 8px rgba(6,21,39,.08);
+    padding:30px 26px 26px;
+    animation:cardIn 700ms cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes cardIn{ from{ opacity:0; transform:translateY(28px); } to{ opacity:1; transform:translateY(0); } }
+  @media (prefers-reduced-motion: reduce){ .card{ animation:none; } }
+
+  .card h2{ color:var(--navy); font-weight:800; font-size:22px; text-align:center; }
+  .card p.sub{ color:var(--muted); text-align:center; font-size:14px; margin-top:6px; margin-bottom:22px; line-height:1.4; }
+
+  .field{ margin-bottom:14px; }
+  .d-none{ display:none !important; }
+  .field.reveal{ animation:fieldIn 480ms cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes fieldIn{ from{opacity:0;transform:translateY(10px);} to{opacity:1;transform:translateY(0);} }
+  @media (prefers-reduced-motion: reduce){ .field.reveal{ animation:none; } }
+
+  .field label{ display:block; font-size:12.5px; font-weight:700; color:var(--navy); text-transform:uppercase; letter-spacing:.03em; margin-bottom:6px; }
+  .field label .req{ color:var(--orange); }
+
+  .input-shell{
+    position:relative; display:flex; align-items:center;
+    border:1.8px solid #e3e9ee; border-radius:14px; background:#fbfcfd;
+    transition:border-color .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .input-shell:focus-within{ border-color:var(--turquoise); box-shadow:0 0 0 4px rgba(25,179,173,.14); background:#fff; }
+  .input-shell.err{ border-color:#e04848; box-shadow:0 0 0 4px rgba(224,72,72,.1); }
+  .input-icon{ flex:none; width:40px; height:48px; display:flex; align-items:center; justify-content:center; color:var(--blue); }
+  .input-icon.wa{ color:var(--whatsapp); }
+  .input-shell input{
+    flex:1; border:none; background:transparent; outline:none; height:48px;
+    font-size:15px; font-weight:600; color:var(--ink); padding-right:14px;
+    font-family:'Inter',sans-serif; width:100%;
+  }
+  .err-msg{ display:none; color:#e04848; font-size:12px; font-weight:600; margin-top:5px; }
+  .input-shell.err + .err-msg{ display:block; }
+
+  /* ---------- city autocomplete ---------- */
+  .ac-wrap{ position:relative; }
+  .ac-panel{
+    position:absolute; left:0; right:0; top:calc(100% + 8px); z-index:25;
+    background:#fff; border-radius:16px; border:1px solid #e9edf1;
+    box-shadow:0 18px 40px -12px rgba(11,31,58,.28);
+    padding:7px; opacity:0; transform:translateY(-6px) scale(.98); pointer-events:none;
+    transition:opacity .15s ease, transform .15s ease;
+    max-height:230px; overflow-y:auto;
+  }
+  .ac-panel.open{ opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
+  .ac-option{
+    display:flex; align-items:center; gap:9px;
+    padding:11px 12px; border-radius:11px; font-size:14.5px; font-weight:600; color:var(--ink);
+    cursor:pointer; transition:background .12s ease;
+  }
+  .ac-option:hover, .ac-option.hl{ background:#eef7f6; }
+  .ac-option svg{ width:15px;height:15px; color:var(--blue); flex:none; }
+
+  /* ---------- custom dropdown ---------- */
+  .dd{ position:relative; }
+  .dd-trigger{
+    width:100%; display:flex; align-items:center; text-align:left; gap:0;
+    border:1.8px solid #e3e9ee; border-radius:14px; background:#fbfcfd;
+    cursor:pointer; padding:0; height:52px; transition:border-color .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .dd.open .dd-trigger, .dd-trigger:focus{ border-color:var(--turquoise); box-shadow:0 0 0 4px rgba(25,179,173,.14); background:#fff; outline:none; }
+  .dd.err .dd-trigger{ border-color:#e04848; box-shadow:0 0 0 4px rgba(224,72,72,.1); }
+  .dd-icon{ flex:none; width:40px; display:flex; align-items:center; justify-content:center; color:var(--blue); }
+  .dd-value{ flex:1; font-size:15px; font-weight:600; color:#8a97a0; }
+  .dd-value.picked{ color:var(--ink); }
+  .dd-chevron{ flex:none; width:34px; display:flex; align-items:center; justify-content:center; color:#8a97a0; transition:transform .2s ease; }
+  .dd.open .dd-chevron{ transform:rotate(180deg); }
+  .dd-panel{
+    position:absolute; left:0; right:0; top:calc(100% + 8px); z-index:20;
+    background:#fff; border-radius:16px; border:1px solid #e9edf1;
+    box-shadow:0 18px 40px -12px rgba(11,31,58,.28);
+    padding:7px; opacity:0; transform:translateY(-6px) scale(.98); pointer-events:none;
+    transition:opacity .16s ease, transform .16s ease;
+    max-height:280px; overflow-y:auto;
+  }
+  .dd.open .dd-panel{ opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
+  .dd-option{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    padding:12px 13px; border-radius:11px; font-size:14.5px; font-weight:600; color:var(--ink);
+    cursor:pointer; transition:background .12s ease;
+  }
+  .dd-option:hover{ background:#eef7f6; }
+  .dd-option.selected{ background:#fff3ea; color:var(--orange-dark); }
+  .dd-option svg{ width:16px; height:16px; opacity:0; color:var(--orange); flex:none; }
+  .dd-option.selected svg{ opacity:1; }
+
+  .submit-btn{
+    width:100%; margin-top:6px; border:none; border-radius:16px;
+    background:linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%); color:#fff;
+    font-family:'Poppins',sans-serif; font-weight:700; font-size:16px; padding:16px 18px;
+    display:flex; align-items:center; justify-content:center; gap:10px; cursor:pointer;
+    box-shadow:0 14px 28px -8px rgba(242,106,27,.55);
+    transition:transform .12s ease, box-shadow .2s ease, filter .2s ease;
+  }
+  .submit-btn:hover{ filter:brightness(1.05); box-shadow:0 18px 32px -8px rgba(242,106,27,.65); }
+  .submit-btn:active{ transform:scale(.98); }
+  .submit-btn:disabled{ opacity:.75; cursor:default; transform:none; }
+  .submit-btn svg{ width:21px; height:21px; }
+
+  .spinner{ width:19px;height:19px;border-radius:50%; border:2.5px solid rgba(255,255,255,.4); border-top-color:#fff; animation:spin .7s linear infinite; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  .badges{ display:flex; margin-top:22px; padding-top:18px; border-top:1px solid #eef1f4; transition:opacity .12s ease, visibility .12s ease; }
+  .veiled{ opacity:0 !important; visibility:hidden !important; }
+  .badge{ flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; text-align:center; padding:0 4px; position:relative; }
+  .badge:not(:last-child)::after{ content:""; position:absolute; right:0; top:4px; bottom:4px; width:1px; background:#eef1f4; }
+  .badge .ic{ width:36px;height:36px;border-radius:50%; background:#eef7f6; display:flex;align-items:center;justify-content:center; color:var(--turquoise); }
+  .badge span{ font-size:11px; font-weight:700; color:var(--navy); line-height:1.25; }
+
+  .success-panel{ display:none; text-align:center; }
+  .success-panel.show{ display:block; animation:fieldIn 500ms ease both; }
+  .success-icon{ width:70px;height:70px;border-radius:50%; background:#e7f8ee; display:flex;align-items:center;justify-content:center; margin:0 auto 16px; color:#1fa15a; }
+  .success-panel h2{ margin-bottom:8px; }
+  .success-panel p.sub{ margin-bottom:22px; }
+  .wa-link{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--whatsapp);color:#fff;text-decoration:none;
+    border-radius:16px;padding:15px 18px;font-weight:700;font-family:'Poppins',sans-serif;
+    box-shadow:0 14px 26px -8px rgba(37,211,102,.55); margin-bottom:12px;
+  }
+  .wa-link svg{ width:21px;height:21px; }
+  .again-link{ color:var(--muted); font-size:13px; font-weight:600; text-decoration:underline; background:none; border:none; cursor:pointer; }
+
+  footer.brand-footer{
+    position:relative; z-index:2; text-align:center; color:#8ea2b0; font-size:12px;
+    padding:18px 20px 28px; display:flex; flex-direction:column; align-items:center; gap:8px;
+  }
+  footer.brand-footer a{
+    color:#cfe3f0; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-weight:600;
+  }
+  footer.brand-footer a svg{ width:15px; height:15px; }
+</style>
+</head>
+<body>
+
+<div class="bg-stage" aria-hidden="true">
+  <div class="bg-layer active" data-stage="0"><img src="assets/fachada.jpg" alt=""></div>
+  <div class="bg-layer" data-stage="1"><img src="assets/familia1.jpg" alt=""></div>
+  <div class="bg-layer" data-stage="2"><img src="assets/familia2.jpg" alt=""></div>
+  <div class="bg-overlay"></div>
+</div>
+
+<section class="hero">
+  <img class="hero-logo" src="assets/logo-transparent.png" alt="Hidrofort Piscinas e Acessórios">
+
+  <div class="ticker" id="ticker">
+    <span class="dot"></span>
+    <span class="ticker-text show" data-i="0">Há mais de 15 anos no mercado</span>
+    <span class="ticker-text" data-i="1">O melhor preço do Brasil</span>
+    <span class="ticker-text" data-i="2">Frete e instalação em todo o Maranhão</span>
+    <span class="ticker-text" data-i="3">Parcelamento em até 19x sem juros</span>
+  </div>
+
+  <h1>Transforme seu quintal em um <span class="accent">paraíso</span></h1>
+  <p class="sub">Piscinas de qualidade com instalação inclusa e frete para todo o Maranhão.</p>
+
+  <div class="price-pill">
+    <span class="price-pill-label">Investimento a partir de</span>
+    <span class="price-pill-value">R$ 10.000</span>
+    <span class="price-pill-note">ou em até 19x sem juros de aprox. R$ 526,32</span>
+  </div>
+
+  <a class="ig-link" href="https://www.instagram.com/hidrofort.piscinas/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    @hidrofort.piscinas
+  </a>
+</section>
+
+<div class="card-wrap">
+  <div class="card" id="card">
+
+    <form id="hidrofortForm" novalidate>
+      <h2>Solicite seu orçamento</h2>
+      <p class="sub">Vá respondendo as perguntas abaixo e fale com um de nossos especialistas.</p>
+
+      <!-- CIDADE (texto livre) -->
+      <div class="field" data-order="0">
+        <label for="cidade">Em qual cidade você deseja instalar? <span class="req">*</span></label>
+        <div class="ac-wrap">
+          <div class="input-shell" data-wrap="cidade">
+            <span class="input-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <input id="cidade" name="cidade" type="text" placeholder="Digite o nome da sua cidade" data-stage-group="1" autocomplete="off">
+          </div>
+          <div class="ac-panel" id="cidadePanel"></div>
+        </div>
+        <div class="err-msg">Informe sua cidade.</div>
+      </div>
+
+      <!-- ORÇAMENTO (filtro de investimento) -->
+      <div class="field d-none" data-order="1">
+        <label>Você tem disponibilidade para investir a partir de R$ 10.000 nesse momento? <span class="req">*</span></label>
+        <div class="dd" data-name="orcamento" data-stage-group="1">
+          <button type="button" class="dd-trigger">
+            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10a3 3 0 0 1 3-1.5c1.66 0 3 .9 3 2S13.66 12 12 12s-3 .9-3 2 1.34 2 3 2a3 3 0 0 0 3-1.5"/></svg></span>
+            <span class="dd-value">Selecione uma opção</span>
+            <span class="dd-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="dd-panel" role="listbox">
+            <div class="dd-option" data-value="Sim, tenho esse valor à vista">Sim, tenho esse valor à vista<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Sim, posso parcelar em até 19x sem juros">Sim, posso parcelar em até 19x sem juros<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Preciso organizar um pouco mais">Preciso organizar um pouco mais<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="No momento não, só estou pesquisando">No momento não, só estou pesquisando<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          </div>
+          <input type="hidden" name="orcamento">
+        </div>
+        <div class="err-msg">Selecione uma opção.</div>
+      </div>
+
+      <!-- COMO IMAGINA -->
+      <div class="field d-none" data-order="2">
+        <label>Como você imagina sua piscina? <span class="req">*</span></label>
+        <div class="dd" data-name="imagina" data-stage-group="1">
+          <button type="button" class="dd-trigger">
+            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0 3-1.3 4.5 0"/><path d="M2 21c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0 3-1.3 4.5 0"/><path d="M12 3v7"/><path d="M8 7l4-4 4 4"/></svg></span>
+            <span class="dd-value">Selecione uma opção</span>
+            <span class="dd-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="dd-panel" role="listbox">
+            <div class="dd-option" data-value="Para aproveitar com a família">Para aproveitar com a família<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Para lazer e receber amigos">Para lazer e receber amigos<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Para relaxar e descansar">Para relaxar e descansar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Para valorizar meu imóvel">Para valorizar meu imóvel<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Ainda não tenho certeza, quero conhecer as opções">Ainda não tenho certeza<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          </div>
+          <input type="hidden" name="imagina">
+        </div>
+        <div class="err-msg">Selecione uma opção.</div>
+      </div>
+
+      <!-- PREVISAO -->
+      <div class="field d-none" data-order="3">
+        <label>Qual a previsão de compra? <span class="req">*</span></label>
+        <div class="dd" data-name="previsao" data-stage-group="1">
+          <button type="button" class="dd-trigger">
+            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <span class="dd-value">Selecione uma opção</span>
+            <span class="dd-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="dd-panel" role="listbox">
+            <div class="dd-option" data-value="Quero comprar imediatamente">Quero comprar imediatamente<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Nos próximos 30 dias">Nos próximos 30 dias<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Nos próximos 3 meses">Nos próximos 3 meses<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Estou apenas pesquisando">Estou apenas pesquisando<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          </div>
+          <input type="hidden" name="previsao">
+        </div>
+        <div class="err-msg">Selecione uma opção.</div>
+      </div>
+
+      <!-- PAGAMENTO -->
+      <div class="field d-none" data-order="4">
+        <label>Qual a forma de pagamento preferida? <span class="req">*</span></label>
+        <div class="dd" data-name="pagamento" data-stage-group="1">
+          <button type="button" class="dd-trigger">
+            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+            <span class="dd-value">Selecione uma opção</span>
+            <span class="dd-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="dd-panel" role="listbox">
+            <div class="dd-option" data-value="Pix ou à vista">Pix ou à vista<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Cartão de crédito">Cartão de crédito<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Financiamento">Financiamento<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="dd-option" data-value="Ainda preciso conhecer as condições">Ainda preciso conhecer as condições<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          </div>
+          <input type="hidden" name="pagamento">
+        </div>
+        <div class="err-msg">Selecione uma opção.</div>
+      </div>
+
+      <!-- NOME -->
+      <div class="field d-none" data-order="5">
+        <label for="nome">Seu nome <span class="req">*</span></label>
+        <div class="input-shell" data-wrap="nome">
+          <span class="input-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+          <input id="nome" name="nome" type="text" placeholder="Digite seu nome" data-stage-group="2" autocomplete="name">
+        </div>
+        <div class="err-msg">Informe seu nome completo.</div>
+      </div>
+
+      <!-- WHATSAPP -->
+      <div class="field d-none" data-order="6">
+        <label for="whats">WhatsApp <span class="req">*</span></label>
+        <div class="input-shell" data-wrap="whats">
+          <span class="input-icon wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.25-8.25 8.25a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.37c0-4.55 3.7-8.26 8.25-8.26M8.53 7.33c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.72 2.76 4.27 3.74 2.12.82 2.55.66 3.01.62.46-.05 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.07-.11-.24-.17-.5-.3-.27-.13-1.57-.78-1.82-.86-.25-.09-.42-.13-.6.13-.17.26-.69.87-.85 1.04-.16.18-.31.2-.58.07-.27-.14-1.13-.42-2.16-1.34-.8-.72-1.34-1.6-1.5-1.87-.16-.26-.02-.41.12-.54.12-.13.27-.33.4-.5.14-.16.18-.28.27-.46.09-.19.05-.35-.02-.49-.07-.13-.6-1.47-.84-2.01-.22-.52-.44-.45-.6-.46h-.44"/></svg>
+          </span>
+          <input id="whats" name="whats" type="tel" placeholder="(98) 9 0000-0000" data-stage-group="2" autocomplete="tel">
+        </div>
+        <div class="err-msg">Informe um WhatsApp válido com DDD.</div>
+      </div>
+
+      <button type="submit" class="submit-btn d-none" id="submitBtn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.25-8.25 8.25a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.37c0-4.55 3.7-8.26 8.25-8.26M8.53 7.33c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.72 2.76 4.27 3.74 2.12.82 2.55.66 3.01.62.46-.05 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.07-.11-.24-.17-.5-.3-.27-.13-1.57-.78-1.82-.86-.25-.09-.42-.13-.6.13-.17.26-.69.87-.85 1.04-.16.18-.31.2-.58.07-.27-.14-1.13-.42-2.16-1.34-.8-.72-1.34-1.6-1.5-1.87-.16-.26-.02-.41.12-.54.12-.13.27-.33.4-.5.14-.16.18-.28.27-.46.09-.19.05-.35-.02-.49-.07-.13-.6-1.47-.84-2.01-.22-.52-.44-.45-.6-.46h-.44"/></svg>
+        <span id="submitLabel">Solicitar orçamento</span>
+      </button>
+
+      <div class="badges">
+        <div class="badge">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M10 17h4V5H2v12h3"/><path d="M14 10h4l3 3v4h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span>
+          <span>Frete para<br>todo o Maranhão</span>
+        </div>
+        <div class="badge">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="m14.7 6.3 3 3L19 8l-3-3Z"/><path d="M14.7 6.3 4 17v3h3L17.7 9.3"/></svg></span>
+          <span>Instalação<br>inclusa</span>
+        </div>
+        <div class="badge">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <span>Qualidade<br>e garantia</span>
+        </div>
+      </div>
+    </form>
+
+    <div class="success-panel" id="successPanel">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="34" height="34"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h2>Sua nova área de lazer começa aqui!</h2>
+      <p class="sub">Recebemos seus dados! Clique no botão abaixo para falar agora com nossa equipe pelo WhatsApp e conhecer os modelos, valores e condições especiais.</p>
+      <a class="wa-link" id="whatsappBtn" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.25-8.25 8.25a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.37c0-4.55 3.7-8.26 8.25-8.26M8.53 7.33c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.72 2.76 4.27 3.74 2.12.82 2.55.66 3.01.62.46-.05 1.49-.6 1.7-1.19.21-.58.21-1.08.15-1.19-.07-.11-.24-.17-.5-.3-.27-.13-1.57-.78-1.82-.86-.25-.09-.42-.13-.6.13-.17.26-.69.87-.85 1.04-.16.18-.31.2-.58.07-.27-.14-1.13-.42-2.16-1.34-.8-.72-1.34-1.6-1.5-1.87-.16-.26-.02-.41.12-.54.12-.13.27-.33.4-.5.14-.16.18-.28.27-.46.09-.19.05-.35-.02-.49-.07-.13-.6-1.47-.84-2.01-.22-.52-.44-.45-.6-.46h-.44"/></svg>
+        Chamar no WhatsApp agora
+      </a>
+      <button type="button" class="again-link" id="againBtn">Preencher novamente</button>
+    </div>
+
+  </div>
+</div>
+
+<footer class="brand-footer">
+  <a href="https://www.instagram.com/hidrofort.piscinas/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    @hidrofort.piscinas
+  </a>
+  <div>Hidrofort Produtos para Piscinas LTDA · Todo o Maranhão</div>
+  <div>CNPJ: 58.085.224/0001-23</div>
+</footer>
+
+<script>
+  const WHATSAPP_NUMBER = '5598987580567';
+
+  /* ---------- background stage ---------- */
+  const layers = document.querySelectorAll('.bg-layer');
+  let currentStage = 0;
+  function setStage(stage){
+    if(stage <= currentStage) return;
+    currentStage = stage;
+    layers.forEach(l => l.classList.toggle('active', Number(l.dataset.stage) === currentStage));
+  }
+
+  /* ---------- rotating ticker ---------- */
+  (function(){
+    const items = document.querySelectorAll('.ticker-text');
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches || items.length < 2) return;
+    let i = 0;
+    setInterval(()=>{
+      items[i].classList.remove('show');
+      i = (i + 1) % items.length;
+      items[i].classList.add('show');
+    }, 3200);
+  })();
+
+  /* ---------- progressive reveal ---------- */
+  const fieldsOrder = Array.from(document.querySelectorAll('.field')).sort((a,b)=> Number(a.dataset.order) - Number(b.dataset.order));
+  const submitBtn = document.getElementById('submitBtn');
+
+  function revealNext(fromOrder){
+    const next = fieldsOrder.find(f => Number(f.dataset.order) === fromOrder + 1);
+    if(next && next.classList.contains('d-none')){
+      next.classList.remove('d-none');
+      next.classList.add('reveal');
+      setTimeout(()=> next.scrollIntoView({behavior:'smooth', block:'center'}), 60);
+    } else if(!next){
+      submitBtn.classList.remove('d-none');
+      submitBtn.classList.add('reveal');
+    }
+  }
+
+  // text inputs: reveal next after a short pause once there's enough content
+  function wireTextReveal(input, minLen, order){
+    let t;
+    input.addEventListener('input', ()=>{
+      clearTimeout(t);
+      if(input.value.trim().length >= minLen){
+        t = setTimeout(()=> revealNext(order), 550);
+      }
+    });
+  }
+  wireTextReveal(document.getElementById('nome'), 3, 5);
+  wireTextReveal(document.getElementById('whats'), 8, 6);
+
+  /* ---------- cidade: autocomplete (apenas Maranhão) ---------- */
+  const MA_CITIES = ["Açailândia","Afonso Cunha","Água Doce do Maranhão","Alcântara","Aldeias Altas","Altamira do Maranhão","Alto Alegre do Maranhão","Alto Alegre do Pindaré","Alto Parnaíba","Amapá do Maranhão","Amarante do Maranhão","Anajatuba","Anapurus","Apicum-Açu","Araguanã","Araioses","Arame","Arari","Axixá","Bacabal","Bacabeira","Bacuri","Bacurituba","Balsas","Barão de Grajaú","Barra do Corda","Barreirinhas","Bela Vista do Maranhão","Belágua","Benedito Leite","Bequimão","Bernardo do Mearim","Boa Vista do Gurupi","Bom Jardim","Bom Jesus das Selvas","Bom Lugar","Brejo","Brejo de Areia","Buriti","Buriti Bravo","Buriticupu","Buritirana","Cachoeira Grande","Cajapió","Cajari","Campestre do Maranhão","Cândido Mendes","Cantanhede","Capinzal do Norte","Carolina","Carutapera","Caxias","Cedral","Central do Maranhão","Centro do Guilherme","Centro Novo do Maranhão","Chapadinha","Cidelândia","Codó","Coelho Neto","Colinas","Conceição do Lago-Açu","Coroatá","Cururupu","Davinópolis","Dom Pedro","Duque Bacelar","Esperantinópolis","Estreito","Feira Nova do Maranhão","Fernando Falcão","Formosa da Serra Negra","Fortaleza dos Nogueiras","Fortuna","Godofredo Viana","Gonçalves Dias","Governador Archer","Governador Edison Lobão","Governador Eugênio Barros","Governador Luiz Rocha","Governador Newton Bello","Governador Nunes Freire","Graça Aranha","Grajaú","Guimarães","Humberto de Campos","Icatu","Igarapé do Meio","Igarapé Grande","Imperatriz","Itaipava do Grajaú","Itapecuru Mirim","Itinga do Maranhão","Jatobá","Jenipapo dos Vieiras","João Lisboa","Joselândia","Junco do Maranhão","Lago da Pedra","Lago do Junco","Lago dos Rodrigues","Lago Verde","Lagoa do Mato","Lagoa Grande do Maranhão","Lajeado Novo","Lima Campos","Loreto","Luís Domingues","Magalhães de Almeida","Maracaçumé","Marajá do Sena","Maranhãozinho","Mata Roma","Matinha","Matões","Matões do Norte","Milagres do Maranhão","Mirador","Miranda do Norte","Mirinzal","Monção","Montes Altos","Morros","Nina Rodrigues","Nova Colinas","Nova Iorque","Nova Olinda do Maranhão","Olho d'Água das Cunhãs","Olinda Nova do Maranhão","Paço do Lumiar","Palmeirândia","Paraibano","Parnarama","Passagem Franca","Pastos Bons","Paulino Neves","Paulo Ramos","Pedreiras","Pedro do Rosário","Penalva","Peri Mirim","Peritoró","Pindaré-Mirim","Pinheiro","Pio XII","Pirapemas","Poção de Pedras","Porto Franco","Porto Rico do Maranhão","Presidente Dutra","Presidente Juscelino","Presidente Médici","Presidente Sarney","Presidente Vargas","Primeira Cruz","Raposa","Riachão","Ribamar Fiquene","Rosário","Sambaíba","Santa Filomena do Maranhão","Santa Helena","Santa Inês","Santa Luzia","Santa Luzia do Paruá","Santa Quitéria do Maranhão","Santa Rita","Santana do Maranhão","Santo Amaro do Maranhão","Santo Antônio dos Lopes","São Benedito do Rio Preto","São Bento","São Bernardo","São Domingos do Azeitão","São Domingos do Maranhão","São Félix de Balsas","São Francisco do Brejão","São Francisco do Maranhão","São João Batista","São João do Carú","São João do Paraíso","São João do Soter","São João dos Patos","São José de Ribamar","São José dos Basílios","São Luís","São Luís Gonzaga do Maranhão","São Mateus do Maranhão","São Pedro da Água Branca","São Pedro dos Crentes","São Raimundo das Mangabeiras","São Raimundo do Doca Bezerra","São Roberto","São Vicente Ferrer","Satubinha","Senador Alexandre Costa","Senador La Rocque","Serrano do Maranhão","Sítio Novo","Sucupira do Norte","Sucupira do Riachão","Tasso Fragoso","Timbiras","Timon","Trizidela do Vale","Tufilândia","Tuntum","Turiaçu","Turilândia","Tutóia","Urbano Santos","Vargem Grande","Viana","Vila Nova dos Martírios","Vitória do Mearim","Vitorino Freire","Zé Doca"];
+
+  function normalize(s){ return s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase(); }
+
+  (function(){
+    const input = document.getElementById('cidade');
+    const panel = document.getElementById('cidadePanel');
+    let activeIdx = -1;
+
+    function render(matches){
+      panel.innerHTML = matches.map(c =>
+        `<div class="ac-option" data-value="${c}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>${c}</div>`
+      ).join('');
+      panel.querySelectorAll('.ac-option').forEach(opt=>{
+        opt.addEventListener('click', ()=>{
+          input.value = opt.dataset.value;
+          closePanel();
+          revealNext(0);
+        });
+      });
+    }
+    function openPanel(){ panel.classList.add('open'); updateVeilFrom(0); }
+    function closePanel(){ panel.classList.remove('open'); activeIdx = -1; updateVeilFrom(-1); }
+
+    input.addEventListener('input', ()=>{
+      const q = normalize(input.value.trim());
+      if(q.length < 1){ closePanel(); return; }
+      const starts = MA_CITIES.filter(c => normalize(c).startsWith(q));
+      const contains = MA_CITIES.filter(c => !normalize(c).startsWith(q) && normalize(c).includes(q));
+      const matches = starts.concat(contains).slice(0, 6);
+      if(matches.length){ render(matches); openPanel(); } else { closePanel(); }
+    });
+    input.addEventListener('focus', ()=>{ if(panel.innerHTML && input.value.trim().length) openPanel(); });
+    document.addEventListener('click', (e)=>{ if(!e.target.closest('.ac-wrap')) closePanel(); });
+
+    // fallback: se a pessoa digitar e não clicar numa sugestão, revela a próxima pergunta após uma pausa
+    let t;
+    input.addEventListener('input', ()=>{
+      clearTimeout(t);
+      if(input.value.trim().length >= 2){ t = setTimeout(()=> revealNext(0), 900); }
+    });
+  })();
+
+  /* ---------- custom dropdowns ---------- */
+  document.querySelectorAll('.dd').forEach(dd=>{
+    const trigger = dd.querySelector('.dd-trigger');
+    const panel = dd.querySelector('.dd-panel');
+    const valueEl = dd.querySelector('.dd-value');
+    const hiddenInput = dd.querySelector('input[type="hidden"]');
+    const order = Number(dd.closest('.field').dataset.order);
+
+    trigger.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      document.querySelectorAll('.dd.open').forEach(o=>{ if(o !== dd) o.classList.remove('open'); });
+      dd.classList.toggle('open');
+      updateVeil();
+    });
+
+    dd.querySelectorAll('.dd-option').forEach(opt=>{
+      opt.addEventListener('click', ()=>{
+        dd.querySelectorAll('.dd-option').forEach(o=>o.classList.remove('selected'));
+        opt.classList.add('selected');
+        valueEl.textContent = opt.dataset.value;
+        valueEl.classList.add('picked');
+        hiddenInput.value = opt.dataset.value;
+        dd.classList.remove('open');
+        dd.classList.remove('err');
+        revealNext(order);
+        updateVeil();
+      });
+    });
+  });
+  document.addEventListener('click', ()=>{
+    document.querySelectorAll('.dd.open').forEach(d=>d.classList.remove('open'));
+    updateVeil();
+  });
+
+  // esconde badges / botão / campos abaixo do painel aberto (dropdown ou autocomplete), pra evitar sobreposição visual
+  function updateVeilFrom(openOrder){
+    document.querySelectorAll('.veiled').forEach(el=>el.classList.remove('veiled'));
+    if(openOrder < 0) return;
+    fieldsOrder.forEach(f=>{
+      if(Number(f.dataset.order) > openOrder) f.classList.add('veiled');
+    });
+    document.querySelector('.badges').classList.add('veiled');
+    submitBtn.classList.add('veiled');
+    document.querySelector('.brand-footer').classList.add('veiled');
+  }
+  function updateVeil(){
+    const openDd = document.querySelector('.dd.open');
+    if(!openDd){ updateVeilFrom(-1); return; }
+    updateVeilFrom(Number(openDd.closest('.field').dataset.order));
+  }
+
+  /* ---------- stage transitions tied to field interaction ---------- */
+  document.querySelectorAll('[data-stage-group]').forEach(el=>{
+    const handler = () => setStage(Number(el.dataset.stageGroup));
+    el.addEventListener('focus', handler);
+    el.addEventListener('change', handler);
+  });
+  document.querySelectorAll('.dd[data-stage-group]').forEach(dd=>{
+    dd.querySelector('.dd-trigger').addEventListener('click', ()=> setStage(Number(dd.dataset.stageGroup)));
+  });
+
+  /* ---------- submit ---------- */
+  const form = document.getElementById('hidrofortForm');
+  const submitLabel = document.getElementById('submitLabel');
+  const successPanel = document.getElementById('successPanel');
+
+  function validatePhone(v){
+    const digits = v.replace(/\D/g,'');
+    return digits.length >= 10 && digits.length <= 13;
+  }
+  function markError(name, isError){
+    const shell = form.querySelector(`[data-wrap="${name}"]`) || form.querySelector(`.dd[data-name="${name}"]`);
+    shell.classList.toggle('err', isError);
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form).entries());
+    let valid = true;
+
+    if(!data.cidade || data.cidade.trim().length < 2){ markError('cidade', true); valid = false; } else markError('cidade', false);
+    if(!data.orcamento){ markError('orcamento', true); valid = false; } else markError('orcamento', false);
+    if(!data.imagina){ markError('imagina', true); valid = false; } else markError('imagina', false);
+    if(!data.previsao){ markError('previsao', true); valid = false; } else markError('previsao', false);
+    if(!data.pagamento){ markError('pagamento', true); valid = false; } else markError('pagamento', false);
+    if(!data.nome || data.nome.trim().length < 3){ markError('nome', true); valid = false; } else markError('nome', false);
+    if(!data.whats || !validatePhone(data.whats)){ markError('whats', true); valid = false; } else markError('whats', false);
+
+    if(!valid){
+      form.querySelector('.input-shell.err, .dd.err')?.closest('.field')?.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+
+    setStage(2);
+    submitBtn.disabled = true;
+    submitLabel.textContent = 'Enviando...';
+    submitBtn.insertAdjacentHTML('afterbegin', '<span class="spinner" id="spin"></span>');
+    submitBtn.querySelector('svg').style.display = 'none';
+
+    setTimeout(()=>{
+      const temOrcamento = data.orcamento === 'Sim, tenho esse valor à vista' || data.orcamento === 'Sim, posso parcelar em até 19x sem juros';
+
+      if(typeof fbq === 'function'){
+        fbq('track', 'Lead');
+        if(temOrcamento){ fbq('trackCustom', 'LeadQualificado'); }
+      }
+
+      const msg = `Olá! Vim pelo anúncio da Hidrofort e quero saber mais sobre as piscinas.%0A%0A`
+        + `*Nome:* ${encodeURIComponent(data.nome)}%0A`
+        + `*Cidade:* ${encodeURIComponent(data.cidade)}%0A`
+        + `*Disponibilidade de investimento:* ${encodeURIComponent(data.orcamento)}%0A`
+        + `*Uso da piscina:* ${encodeURIComponent(data.imagina)}%0A`
+        + `*Previsão de compra:* ${encodeURIComponent(data.previsao)}%0A`
+        + `*Pagamento:* ${encodeURIComponent(data.pagamento)}`;
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
+      document.getElementById('whatsappBtn').href = waUrl;
+
+      form.style.display = 'none';
+      successPanel.classList.add('show');
+
+      window.open(waUrl, '_blank');
+    }, 900);
+  });
+
+  document.getElementById('againBtn').addEventListener('click', ()=> location.reload());
+</script>
+</body>
+</html>
